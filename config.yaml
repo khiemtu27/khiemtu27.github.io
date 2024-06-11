@@ -1,0 +1,44 @@
+baseURL: "https://khiemtu.xyz"
+languageCode: "vi"
+paginate: 5
+DefaultContentLanguage: "vi"
+enableInlineShortcodes: true
+title: "Khiêm Từ"
+disableKinds: ["taxonomy", "term"]
+outputs:
+  home:
+    - html
+    - rss
+  section:
+    - html
+params:
+  description: "Một trang blog cá nhân của Khiêm, nơi tôi viết về những chủ đề tôi thích thú như văn, truyện, thơ, các bài luận, triết, và công nghệ."
+permalinks:
+  posts: "/:slug/"
+  tags: "/:slug/"
+markup:
+  defaultMarkdownHandler: "asciidocext"
+  asciidocExt:
+    attributes:
+      - source-highlighter: rouge
+      - experimental: true
+      - note-caption: "Ghi chú"
+      - caution-caption: "Lưu ý"
+      - warning-caption: "Cảnh báo"
+    backend: html5
+    extensions:
+    preserveTOC: false
+    safeMode: unsafe
+    sectionNumbers: true
+    trace: false
+    verbose: false
+    workingFolderCurrent: false
+  highlight:
+    noClasses: false
+    tabWidth: 4
+  tableOfContents:
+    startLevel: 2
+    endLevel: 3
+security:
+  exec:
+    allow: ["asciidoctor"]

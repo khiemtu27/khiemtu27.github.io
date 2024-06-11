@@ -1,0 +1,29 @@
+/* DETAILS */
+details > summary {
+	user-select: none;
+	cursor: pointer;
+	line-height: 1.8rem;
+	background: var(--bg1);
+	padding: 0.2rem 0.5rem;
+	font-size: var(--small);
+	font-weight: var(--bold);
+	z-index: 3;
+	border: solid 1px var(--bg2);
+	border-radius: var(--medium-radius);
+	list-style-type: '';
+}
+
+details[open] > summary {
+	border-bottom: 0;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+details > div {
+	background: var(--bg1);
+	padding: .5rem 1rem;
+	border: solid 1px var(--bg2);
+	border-top: 0;
+	border-bottom-left-radius: var(--medium-radius);
+	border-bottom-right-radius: var(--medium-radius);
+}

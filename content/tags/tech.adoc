@@ -1,0 +1,6 @@
+---
+title: "Phần mềm"
+description: "chia sẻ về công nghệ và linux"
+slug: tech
+layout: tag
+---

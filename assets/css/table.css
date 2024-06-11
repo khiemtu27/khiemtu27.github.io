@@ -1,0 +1,25 @@
+/* TABLE */
+table.tableblock {
+	border-radius: var(--small-radius);
+	padding: var(--medium-radius);
+}
+.tableblock th {
+	background: var(--bg1);
+	font-weight: var(--bold);
+}
+.tableblock td {
+	color: var(--fg1);
+	font-size: var(--small);
+	background: var(--bg1);
+	padding: 0.1rem 0.4rem;
+	margin: 0;
+}
+.tableblock td, .tableblock th {
+	border-radius: var(--small-radius);
+}
+table.tableblock {
+	background: var(--bg3);
+	border-radius: var(--medium-radius);
+	padding: 0.2rem;
+	margin: 1rem auto;
+}

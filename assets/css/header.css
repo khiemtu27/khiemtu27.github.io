@@ -1,0 +1,17 @@
+/* HEADER */
+header {
+	outline: solid 2px var(--bg3);
+	display: flex;
+	align-items: center;
+	z-index: 10;
+	position: sticky;
+	min-height: 2.6rem;
+	top: 0.5rem;
+	border-radius: var(--big-radius);
+	background: var(--bg1);
+	width: fit-content;
+}
+header a {
+	margin: 0 2rem;
+	width: fit-content;
+}

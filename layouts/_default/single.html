@@ -1,0 +1,28 @@
+{{ define "main" }}
+
+{{/* LYRICS TOOLBAR */}}
+{{ if isset .Params "tone" }}{{ partial "lyrics-toolbar.html" . }}{{ end }}
+
+{{/* TABLE OF CONTENTS */}}
+{{ if gt (len .TableOfContents) 0 }}{{ partial "toc.html" . }}{{ end }}
+
+{{/* MAIN CONTENT */}}
+<article
+	{{/* turn on indexing if date is set */}}
+	{{ if isset .Params "date" }}data-pagefind-body{{ end }}
+
+	class="
+	{{/* make text more compact for showing lyrics */}}
+	{{ if isset .Params "tone" }}lyrics{{ end }}
+
+	{{/* use serif font if post is stories */}}
+	{{ if in .Params.tags "stories" }}serif{{ end }}">
+
+	{{/* content of asciidoc file */}}
+	{{ .Content }}
+</article>
+
+{{/* POST INFO - only for posts that have ".Params.date" set */}}
+{{ if isset .Params "date" }}{{ partial "post-info.html" . }}{{ end }}
+
+{{ end }}

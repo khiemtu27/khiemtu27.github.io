@@ -1,0 +1,4 @@
+<section data-pagefind-ignore class="mt-3 select-none text-right small">
+	<p class="thin">Ngày {{ .Date | dateFormat (.Site.Params.dateformat | default "2 tháng 1, 2006") }}</p>
+	{{ range $index, $tag := .Params.tags }}<a class="thin fade" href="/{{ $tag }}">#{{ $tag }} </a>{{ end }}
+</section>

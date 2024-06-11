@@ -1,0 +1,80 @@
+/* CLASSES */
+/* both-side margin */
+.my-1 { margin: 1rem 0; }
+.mx-0 { margin: 0 0.5rem; }
+
+/* top margin */
+.mt-0 { margin-top: .5rem; }
+.mt-1 { margin-top: 1rem; }
+.mt-2 { margin-top: 2rem; }
+.mt-3 { margin-top: 3rem; }
+.mt-4 { margin-top: 4rem; }
+.mt-5 { margin-top: 5rem; }
+.mt-6 { margin-top: 6rem; }
+
+/* bottom margin */
+.mb-0 { margin-bottom: .5rem; }
+.mb-1 { margin-bottom: 1rem; }
+.mb-2 { margin-bottom: 2rem; }
+.mb-3 { margin-bottom: 3rem; }
+.mb-4 { margin-bottom: 4rem; }
+.mb-5 { margin-bottom: 5rem; }
+
+/* left margin */
+.ml-0 { margin-left: 0.5rem; }
+.ml-1 { margin-left: 1rem; }
+
+/* right margin */
+.mr-0 { margin-right: 0.5rem; }
+
+/* auto margin */
+.mt-auto { margin-top: auto; }
+.mb-auto { margin-bottom: auto; }
+.ml-auto { margin-left: auto; }
+.mr-auto { margin-right: auto; }
+.mx-auto { margin-left: auto; margin-right: auto; }
+.my-auto { margin-top: auto; margin-bottom: auto; }
+
+/* max width */
+.mw-0 { max-width: 20ch; }
+.mw-1 { max-width: 50ch; }
+.mw-2 { max-width: 60ch; }
+
+/* text align */
+.text-right { text-align: right; }
+.text-center { text-align: center; }
+
+/* text size */
+.small { font-size: var(--small); }
+.tiny { font-size: var(--tiny); }
+
+/* text weight */
+.regular { font-weight: var(--regular) }
+.medium { font-weight: var(--medium) }
+.bold { font-weight: var(--bold) }
+
+/* text colors */
+.bright { color: var(--bright); }
+.fade { color: var(--fg2); }
+.fade-1 { color: var(--fg1); }
+
+/* font family */
+.mono { font-family: var(--mono); }
+.sans { font-family: var(--sans); }
+.serif { font-family: var(--serif); font-size: 1.125rem; }
+
+/* text transform */
+.lowercase { text-transform: lowercase; }
+.thin { line-height: 1.2rem; margin: 0; }
+
+/* display */
+.flex { display: flex; }
+.relative { position: relative; }
+.opacity-60 { opacity: .6 }
+
+/* float images */
+.left { display: block; margin-right: auto; float: left; }
+.right { display: block; margin-left: auto; float: right; }
+
+/* disable mouse selection */
+.select-none { user-select: none; }

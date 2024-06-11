@@ -1,0 +1,13 @@
+{{ define "main" }}
+<section class="mw-1 mx-auto select-none">
+
+	{{/* loop throught all "RegularPages" and keep ones has its date set,
+	which make sure "about.adoc" "<tag>.adoc" won't be shown here */}}
+	{{ range where .Site.RegularPages ".Params.date" "!=" nil }}
+
+	{{/* display all "regular" posts using small list layout */}}
+	{{ partial "small-list.html" . }}
+
+	{{ end }}
+</section>
+{{ end }}
