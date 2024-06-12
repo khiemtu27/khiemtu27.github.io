@@ -1,6 +1,6 @@
 ---
 title: "Thơ"
-description: "tuổi đôi mươi tập tành làm thơ"
+description: "mới đôi mươi mà tập tành làm thơ đồ đó"
 slug: poetry
 layout: tag
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Phần mềm"
-description: "chia sẻ về công nghệ và linux"
+description: "chia sẻ về các món công nghệ"
 slug: tech
 layout: tag
 ---

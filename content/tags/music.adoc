@@ -1,6 +1,6 @@
 ---
 title: "Âm nhạc"
-description: "bài viết liên quan đến âm nhạc"
+description: "các bài viết liền quan đến âm nhạc"
 slug: music
 layout: tag
 ---

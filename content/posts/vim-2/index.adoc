@@ -1,5 +1,5 @@
 ---
-title: "Vim #2: Phím tắt"
+title: "Vim - Các phím tắt"
 description: các phím tắt tôi dùng trong Vim
 tags:
     - tech
@@ -7,8 +7,11 @@ date: 2024-05-23
 slug: vim-2
 ---
 :toc:
+:sectnums:
+:figure-caption!:
 
-Sau link:/vim-1[phần một] của chuỗi bài viết về Vim, hôm nay tôi sẽ nói về các phím tắt tôi dùng, một vài phím tắt tôi học lỏm được trên mạng, các dotfiles của những người đi trước. Vì đây là bài viết thứ hai trong chuỗi nên tôi sẽ không giới thiệu dài dòng nữa, bắt đầu nhé!
+Sau link:/vim-1[phần một] của chuỗi bài viết về Vim, hôm nay tôi sẽ nói về các phím tắt tôi dùng, một vài phím tắt tôi học lỏm được trên mạng, các dotfiles của những người đi trước.
+Vì đây là bài viết thứ hai trong chuỗi nên tôi sẽ không giới thiệu dài dòng nữa, bắt đầu nhé!
 
 == Cơ bản
 

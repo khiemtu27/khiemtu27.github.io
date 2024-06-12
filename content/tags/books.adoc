@@ -1,6 +1,6 @@
 ---
 title: "Sách"
-description: "chia sẻ về vài quyển sách"
+description: "về việc đọc và những quyển sách"
 slug: books
 layout: tag
 ---

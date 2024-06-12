@@ -1,4 +1,4 @@
 ---
-title: Khiêm Từ
-description: ở đây có những suy nghĩ vẩn vơ
+title: Nhà của Khiêm
+description: về cuộc sống, âm nhạc, công nghệ và triết học
 ---

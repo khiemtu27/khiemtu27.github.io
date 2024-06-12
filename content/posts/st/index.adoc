@@ -1,22 +1,23 @@
 ---
-title: st - Simple terminal
-description: một terminal emulator nhỏ gọn
+title: st - Simple Terminal
+description: một terminal emulator đến từ Suckless
 tags:
     - tech
 date: 2024-05-28
 slug: st
 ---
 :figure-caption!:
+:sectnums:
 
 Với những người dùng Linux, terminal emulator là thứ không thể thiếu, tôi cũng vậy. Phím tắt tiện nhất trên bàn phím của tôi là kbd:[Mod+x] cũng là để mở một cái terminal. Trong bài viết này tôi sẽ ghi lại cách tôi build cho mình một terminal nhỏ gọn, tối giản và chỉ thực hiện những gì tôi cần.
 
-Simple Terminal gọi tắt là _st_ là một terminal đến từ link:/dwm#suckless[Suckless]. Vì đây là bài viết số hai trong series về các phần mềm của Suckless nên tôi sẽ không nói về họ nữa.
+Simple Terminal gọi tắt là _st_ là một terminal đến từ link:/suckless[Suckless]. Vì đây là bài viết số hai trong series về các phần mềm của Suckless nên tôi sẽ không nói về họ nữa.
 
 Để xây dựng một st cho mình, tôi sẽ làm những việc như sau:
 
 * link:/st/#dependencies[Cài đặt gói cần thiết]
 * link:/st/#source-code[Tải mã nguồn]
-* link:/st/#patches[Cài đặt patch]
+* link:/st/#patch[Cài đặt patch]
 . link:/st/#scroll-back[Scroll back]
 . link:/st/#boxdraw[Boxdraw]
 . link:/st/#ligatures[Ligatures]
@@ -24,7 +25,6 @@ Simple Terminal gọi tắt là _st_ là một terminal đến từ link:/dwm#su
 . link:/st/#bold-is-not-bright[Bold is not bright]
 . link:/st/#delkey[Del key]
 * link:/st/#colors[Màu sắc]
-* link:/st/#no-root[Không cần root]
 
 ---
 
@@ -66,10 +66,9 @@ $ cd ./st
 
 ---
 
-[#patches]
+[#patch]
 == Cài đặt patches
-
-Tôi đã giải thích về khải niệm patch (bản vá) trong bài viết về dwm bạn có thể tham khảo link:/dwm/#patches[tại đây].
+Tôi sẽ giải thích về khái niệm patch (bản vá) trong link:/suckless[bài viết về Suckless], bạn có thể tham khảo cụ thể vấn đề này link:/suckless/#patch[tại đây].
 
 [#scroll-back]
 === Scroll back
@@ -138,7 +137,7 @@ Ký tự nối _(ligatures)_ là những ký tự đặt biệt được tạo n
 Tất cả nội dung hiển thị trong terminal về bản chất đều là những khối (cell), trừ một vài trường hợp mưu mẹo hiển thị hình ảnh trong terminal bằng cách phối hợp với X11 như link:https://github.com/ueber-devel/ueberzug[ueberzug]. Những khối này có kích thước y hệt nhau, đó cũng là lí do vì sao terminal không thể hiển thị nhiều kích thước font cùng lúc.
 
 [NOTE]
-Hãy thử mở file `config.def.h` lên bạn sẽ thấy hai biến có tên `cwscale` và `chscale` đó là hai biến dùng để cân chỉnh `cell width` và `cell height` (chiều rộng khối và chiều cao khối).
+Hãy thử mở file config.def.h lên bạn sẽ thấy hai biến có tên `cwscale` và `chscale` đó là hai biến dùng để cân chỉnh `cell width` và `cell height` (chiều rộng khối và chiều cao khối).
 
 Dưới đây là hai hình ảnh so sánh trước và sau khi cài patch hỗ trợ ký tự nối cho st.
 
@@ -254,7 +253,7 @@ $ patch -i patches/bold-is-not-bright.diff
 
 Một trong những yếu tố quyết định đẹp xấu của một terminal emulator là bảng 16 màu của chúng. Thật ra là có tới 18 màu, 16 màu như trên với màu nền _(background)_ và màu chữ _(foreground)_, đôi khi còn cả màu con trỏ _(cursor)_.
 
-Lâu lâu tôi thường thay đổi màu sắc terminal của mình cho đỡ chán mắt, nhưng để phải vào `config.h` để thay đổi từng màu một thì rất phiền... Do đó tôi sẽ bóc tách bảng màu ra những files riêng, và chỉ cần thay đổi một dòng trong `config.h` là có thể thay đổi màu sắc.
+Lâu lâu tôi thường thay đổi màu sắc terminal của mình cho đỡ chán mắt, nhưng để phải vào config.h để thay đổi từng màu một thì rất phiền... Do đó tôi sẽ bóc tách bảng màu ra những files riêng, và chỉ cần thay đổi một dòng trong config.h là có thể thay đổi màu sắc.
 
 .Thao tác
 [%collapsible]
@@ -284,79 +283,17 @@ Tôi đã đính kèm sẵn các bảng màu sau:
 . Vào tab Export, chọn Simple Terminal
 . Copy đoạn mã nguồn đó vào một file có đuôi `.c` trong thư mục gốc của st
 . Xem các file `colors-???.c` mẫu có sẵn để xóa các dòng thừa ở dưới
-. Chỉnh sửa dòng `#include "colors-???.c"` trong file `config.h`.
+. Chỉnh sửa dòng `#include "colors-???.c"` trong file config.h.
 . Sau đó rebuild st bằng lệnh sau `sudo make clean install`
-====
-
----
-
-[#no-root]
-=== Không cần root
-
-Bạn có thể bỏ qua bước này nếu thấy không cần thiết. Mặc định các phần mềm của Suckless sẽ được chuyển đến `/usr/local/bin` trong lúc cài, điều này đòi hỏi ta phải thao tác với các file bằng người dùng `root`.
-
-Chẳng hạn như muốn thay đổi cài đặt trong `config.h` cũng phải dùng lệnh `sudo`, đối với tôi đây là một điều phiền toái. Do đó tôi sẽ chuyển thư mục cài đặt thành `$HOME/.local/bin`. Từ đó mỗi lần compile st không cần quyền `root` nữa.
-
-[CAUTION]
-====
-Để đảm bảo bước này thành công, bạn phải chắc chắn rằng trong `$PATH` của mình có địa chỉ `$HOME/.local/bin`. Nếu không sau khi cài đặt st sẽ không xuất hiện cho chúng ta khởi chạy. Để kiểm tra, hãy thử nhập lệnh này:
-
-[,bash]
-----
-echo $PATH
-----
-
-Nếu trong chuỗi kết quả không có đoạn `/home/<tên người dùng>/.local/bin` thì hãy thêm dòng sau vào `~/.bash_profile` (nếu bạn dùng shell khác thì chắc đã không cần tôi giải thích bước này).
-
-[,bash]
-----
-export PATH=$HOME/.local/bin:$PATH
-----
-
-Ngoài ra, thay đổi này cũng khiến `$HOME` của bạn xuất hiện folder `.terminfo`, nếu bạn muốn cất nó vào một nơi khác cho gọn gàng thì thêm hai dòng sau vào `~/.bash_profile`:
-
-[,bash]
-----
-export TERMINFO="$XDG_DATA_HOME"/terminfo
-export TERMINFO_DIRS="$XDG_DATA_HOME"/terminfo:/usr/share/terminfo
-----
-
-Một lưu ý nhỏ nữa là thay đổi này sẽ khiến chỉ có người dùng bạn dùng để build st mới có thể dùng st, những người dùng khác trên hệ thống nếu muốn dùng sẽ phải tự build một bản cho riêng mình.
-====
-
-.Thao tác
-[%collapsible]
-====
-Trong file `config.mk` có một dòng như sau:
-
-[,makefile]
-----
-PREFIX = /usr/local
-----
-
-Biến `PREFIX` này sẽ được nhắc đến trong `Makefile` -- có thể xem là file kịch bản những việc sẽ làm khi chúng ta nhập `make clean install`.
-
-Để thay đổi vị trí cài st vào `$HOME/.local/bin`, bạn có thể dùng lệnh sau:
-
-[,bash]
-----
-$ sed -i 's/^PREFIX =.*$/PREFIX = \/home\/$(shell whoami)\/.local/' config.mk
-----
-
-Lệnh `sed` này sẽ tìm trong file `config.mk` dòng bắt đầu bằng `PREFIX =` và thay cả dòng đó thành `PREFIX = /home/$(shell whoami)/.local`. Khi bạn chạy lệnh `make install`. Biến `PREFIX` sẽ được khởi tạo, bên trong biến này có cụm `$(shell whoami)` sẽ dùng kết quả của lệnh `whoami` lấp vào chỗ đó.
-
-[NOTE]
-=====
-`whoami` là lệnh để tra cứu tên người dùng hiện tại, bạn có thể nhập vào terminal của mình lệnh này để thử.
-=====
-
-Nghĩa là biến `PREFIX` lúc này sẽ là `/home/<tên người dùng>/.local`. Thế là xong, sau này mỗi lần cài đặt st không cần phải dùng lệnh `sudo` nữa.
 ====
 
 ---
 
 [#showcase]
 == Thành quả
+
+Nếu bạn chưa biết cách cài đặt st lên máy hãy tham khảo qua link:/suckless/#install[bài viết này] nhé!
+
 Mã nguồn của bản st này tôi sẽ công khai ở link:https://gitlab.com/khiemtu27/st[repo GitLab của tôi].  Dưới đây sẽ là ảnh chụp màn hình của tất cả các bảng màu đi kèm để bạn có thể tham khảo.
 
 .Catppuccin (mocha)

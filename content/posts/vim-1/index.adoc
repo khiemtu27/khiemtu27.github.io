@@ -1,5 +1,5 @@
 ---
-title: "Vim #1: Cài đặt cơ bản"
+title: "Vim - Cài đặt cơ bản"
 tags:
   - tech
 date: 2024-03-29

@@ -16,9 +16,8 @@
 			<div class="recent-entry">
 				{{/* title */}}
 				<h2 class="thin medium recent-title">{{ .Title }}</h2>
-				{{ range $index, $tag := .Params.tags }}
+				{{ $tag := index .Params.tags 0 }}
 				<p class="bold fade small recent-tags"> #{{ $tag }}</p>
-				{{ end }}
 				{{/* description */}}
 				<p class="small thin fade">{{ .Description }}</p>
 				{{/* tags */}}

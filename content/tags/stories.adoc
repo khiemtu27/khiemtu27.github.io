@@ -1,6 +1,6 @@
 ---
 title: "Truyện"
-description: "sau những ngày Sài Gòn ủ rủ"
+description: "những câu chuyện chưa đủ hay để in ra sách"
 slug: stories
 layout: tag
 ---

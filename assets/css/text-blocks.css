@@ -19,10 +19,9 @@
 .quoteblock {
 	background: var(--bg1);
 	border-radius: var(--medium-radius);
-	font-size: var(--small);
 	line-height: 1.5rem;
 	margin: 2rem auto;
-	max-width: 60ch;
+	max-width: 55ch;
 	outline: solid 1px var(--bg2);
 	padding: 1rem;
 }
@@ -58,6 +57,11 @@
 	top: 0; left: 0;
 	transform: translate(-.5rem,-1.8rem);
 	width: fit-content;
+}
+.admonitionblock td.content .title {
+	font-size: 1.125rem;
+	font-weight: var(--bold);
+	color: var(--bright);
 }
 
 /* title's background color base on urgency */

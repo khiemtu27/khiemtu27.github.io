@@ -1,6 +1,6 @@
 ---
 title: "Tạp âm"
-description: "những trang nhật ký có tẩm vị giai điệu"
+description: "vài bài nhạc tôi viết vu vơ"
 slug: tap-am
 layout: tag
 ---

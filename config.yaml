@@ -29,7 +29,6 @@ markup:
     extensions:
     preserveTOC: false
     safeMode: unsafe
-    sectionNumbers: true
     trace: false
     verbose: false
     workingFolderCurrent: false
