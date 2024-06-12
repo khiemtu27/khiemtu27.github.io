@@ -63,9 +63,9 @@ jobs:
       - name: Pagefind
         run: npx pagefind --site ./public --output-path ./public/pagefind
 
-      - name: js-beautify
-        run: |
-          find ./public -type f -name '*.html' -exec npx js-beautify -r {} \;
+      # - name: js-beautify
+      #   run: |
+      #     find ./public -type f -name '*.html' -exec npx js-beautify -r {} \;
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
