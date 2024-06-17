@@ -347,6 +347,4 @@ noremap <Leader>` :tablast<CR>
 
 == Kết lại
 
-Như thường lệ, file `vimrc` của tôi sẽ được công khai tại link:https://gitlab.com/khiemtu27/dotfiles/-/tree/master/vim[GitLab].
-
-link:/vim-3[Phần tiếp theo] tôi sẽ nói về cách quản lý các plugins.
+Như thường lệ, file `vimrc` của tôi sẽ được công khai tại link:https://gitlab.com/khiemtu27/dotfiles/-/tree/master/vim[GitLab]. link:/vim-3[Phần tiếp theo] tôi sẽ nói về cách quản lý các plugins.

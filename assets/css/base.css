@@ -1,5 +1,6 @@
 :root {
 	cursor: default !important;
+	font-size: 110%;
 	line-height: 1.6rem;
 	--normal: 1rem;
 	--small: 0.9rem;

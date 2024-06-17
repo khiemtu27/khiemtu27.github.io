@@ -1,0 +1,19 @@
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@khiemtu27" />
+<meta name="twitter:creator" content="@Khiêm_Từ" />
+<meta name="twitter:image" content="{{ `/images/thumbnail.webp` | relURL }}" />
+
+<title>{{ if not .IsHome }}{{ .Title }} - {{ end }}{{ .Site.Title }}</title>
+
+{{ if .IsHome }}
+<meta name="twitter:title" content="{{ .Site.Title }}" />
+<meta name="twitter:description" content="{{ .Site.Params.description }}" />
+
+{{ else if not .IsHome }}
+<meta name="twitter:title" content="{{ .Title }} - {{ .Site.Title }}" />
+
+{{ with .Params.description }}
+<meta name="twitter:description" content="{{ . }}" />
+
+{{ end -}}
+{{ end }}

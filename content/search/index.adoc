@@ -1,0 +1,34 @@
+---
+title: Tìm đọc
+description: tiếp cận các nội dung một cách có chủ ý
+slug: search
+---
+
+pass:[ <div class="mb-4" id="search"></div> ]
+
+== Tìm kiếm
+Nhập từ khóa vào ô phía trên là một trong ba cách để tiếp cận các bài viết trên website này.
+Để giữ cho phần lõi website thật sự đơn giản, tôi chọn sử dụng https://pagefind.app/[Pagefind].
+Một thư viện dùng để tìm kiếm bài viết cho website tĩnh _(static site)_.
+
+Cũng chính vì quá đơn giản nên về phần chức năng có hơi hạn chế, chẳng hạn như Pagefind sẽ phân biệt "a" và "â", "u" và "ư".
+Do đó để kết quả tìm kiếm được chính xác nhất, hãy gõ đúng và đủ từ khóa nhé, chẳng hạn như "tạp âm" thay vì "tap am".
+
+Đây cũng là thứ *duy nhất* trên website này dùng đến link:https://en.wikipedia.org/wiki/JavaScript[javascript].
+
+== Tất cả
+Đây là cách cơ bản nhất để xem qua tất cả bài viết theo thứ tự cũ dần, link:/posts[tại đây].
+Nhưng đây cũng là nơi tôi dùng để xem thành quả của mình sau một thời gian "nuôi nấng" đứa con tinh thần này của mình.
+Do đó dù có hơi rối mắt nhưng tôi vẫn sẽ không xóa phần này đi.
+
+== Thể loại
+Cách còn lại là xem theo các bài viết theo thể loại _(tags)_, hiện tại tôi có những tags dưới đây:
+
+- link:/books[Sách]
+- link:/music[Âm nhạc]
+- link:/poetry[Thơ]
+- link:/stories[Truyện]
+- link:/tap-am[Tạp âm]
+- link:/tech[Công nghệ]
+- link:/thoughts[Ý nghĩ]
+

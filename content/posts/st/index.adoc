@@ -6,7 +6,6 @@ tags:
 date: 2024-05-28
 slug: st
 ---
-:figure-caption!:
 :sectnums:
 
 Với những người dùng Linux, terminal emulator là thứ không thể thiếu, tôi cũng vậy. Phím tắt tiện nhất trên bàn phím của tôi là kbd:[Mod+x] cũng là để mở một cái terminal. Trong bài viết này tôi sẽ ghi lại cách tôi build cho mình một terminal nhỏ gọn, tối giản và chỉ thực hiện những gì tôi cần.

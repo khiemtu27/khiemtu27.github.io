@@ -1,6 +1,7 @@
 {{ define "main" }}
 <section class="mw-2 mx-auto select-none">
 	<div class="bright fade-1 toolbar mb-0">
+		<h2 style="font-size: 1.2rem; margin: 0;">Bài viết gần đây</h2>
 		<a class="ml-auto btn" href="/posts" title="Tất cả bài viết">
 			<img alt="archive" class="icon" src="/all.svg">
 			<div class="btn-text">Tất cả</div>
@@ -34,22 +35,25 @@
 		{{/* set opacity to .2 if at the begining of the list */}}
 		{{ if .HasPrev }}
 		<a class="btn" title="Bài viết mới hơn" href="{{ $paginator.Prev.URL }}">
-		{{ else }}
-		<a style="opacity: .2" title="Bài viết mới hơn" class="btn" href="#">
-		{{ end }}
-			<img alt="newer posts" style="rotate: 180deg" class="icon" src="/right.svg">
-		</a>
+			{{ else }}
+			<a style="opacity: .2" title="Bài viết mới hơn" class="btn" href="#">
+				{{ end }}
+				<img alt="newer posts" style="rotate: 180deg" class="icon" src="/right.svg">
+			</a>
 
-		{{/* show older posts */}}
-		{{/* set opacity to .2 if at the end of the list */}}
-		{{ if .HasNext }}
-		<a class="btn ml-auto" title="Bài viết cũ hơn" href="{{ $paginator.Next.URL }}">
-		{{ else }}
-		<a style="opacity: .2" title="Bài viết cũ hơn" class="ml-auto btn" href="#">
-		{{ end }}
-			<img alt="older posts" class="icon" src="/right.svg">
-		</a>
-		{{ end }}
+			{{/* show older posts */}}
+			{{/* set opacity to .2 if at the end of the list */}}
+			{{ if .HasNext }}
+			<a class="btn ml-auto" title="Bài viết cũ hơn" href="{{ $paginator.Next.URL }}">
+				{{ else }}
+				<a style="opacity: .2" title="Bài viết cũ hơn" class="ml-auto btn" href="#">
+					{{ end }}
+					<img alt="older posts" class="icon" src="/right.svg">
+				</a>
+				{{ end }}
 	</nav>
 
-{{ end }}
+	<hr>
+
+	<article> {{ .Content }} </article>
+	{{ end }}

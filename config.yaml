@@ -13,6 +13,9 @@ outputs:
     - html
 params:
   description: "Một trang blog cá nhân của Khiêm, nơi tôi viết về những chủ đề tôi thích thú như văn, truyện, thơ, các bài luận, triết, và công nghệ."
+  author:
+    email: khiemtu27@gmail.com
+    name: Khiem Tu
 permalinks:
   posts: "/:slug/"
   tags: "/:slug/"
@@ -22,6 +25,7 @@ markup:
     attributes:
       - source-highlighter: rouge
       - experimental: true
+      - figure-caption!: true
       - note-caption: "Ghi chú"
       - caution-caption: "Lưu ý"
       - warning-caption: "Cảnh báo"

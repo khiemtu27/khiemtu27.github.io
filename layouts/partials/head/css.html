@@ -1,0 +1,4 @@
+{{ $randomNumber := add (add (mul 1000 (mod (int (now.UnixNano)) 9000)) (mod (int (now.UnixNano)) 1000)) 1000 }}
+{{ $css := resources.Match "css/**.css" | resources.Concat "style.css" }}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}?id={{ $randomNumber }}" type="text/css" media="all" />
+<link href="/pagefind/pagefind-ui.css" rel="stylesheet" />

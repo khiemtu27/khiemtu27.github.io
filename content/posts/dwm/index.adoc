@@ -7,7 +7,6 @@ description: một window manager đến từ Suckless
 slug: dwm
 ---
 :sectnums:
-:figure-caption!:
 
 [#dwm]
 == dwm - Dynamic window manager

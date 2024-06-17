@@ -6,7 +6,6 @@ tags:
 date: 2024-06-02
 slug: dmenu
 ---
-:figure-caption!:
 :sectnums:
 
 Dmenu hay gọi đầy đủ là dynamic menu, là một phần mềm nữa đến từ link:/suckless[Suckless]. Bài viết này tôi sẽ không đi sâu vào công dụng cũng như cách thức hoạt động của dmenu mà chỉ bàn nhiều về các bước cài đặt. Sẽ có một bài viết trong tương lai tôi chia sẻ về những ứng dụng của dmenu, cũng như các shell scripts tôi dùng.

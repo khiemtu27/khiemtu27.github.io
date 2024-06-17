@@ -70,7 +70,8 @@
 /* display */
 .flex { display: flex; }
 .relative { position: relative; }
-.opacity-60 { opacity: .6 }
+.opacity-60 { opacity: .6; }
+.round { border-radius: 9999px; }
 
 /* float images */
 .left { display: block; margin-right: auto; float: left; }
