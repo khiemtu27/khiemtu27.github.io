@@ -1,0 +1,12 @@
+image: debian
+pages:
+  script:
+  - apt update && apt install -y hugo ruby asciidoctor nodejs npm ruby-rouge ruby-asciidoctor
+  - hugo --minify --baseURL="https://khiemtu27.gitlab.io"
+  - npx pagefind --site ./public --output-path ./public/pagefind
+  #  - find ./public -type f -name '*.html' -exec npx js-beautify -r {} \;
+  artifacts:
+    paths:
+    - public
+  only:
+  - master
