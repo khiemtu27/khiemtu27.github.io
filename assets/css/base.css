@@ -80,6 +80,7 @@
 	body { padding: 0 .2rem; }
 	.content video, .content img { display: block; margin: .5rem auto; }
 	.left, .right { float: none !important; }
+	:root { font-size: 100%; }
 }
 html {
 	font-family: var(--sans);

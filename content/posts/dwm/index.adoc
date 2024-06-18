@@ -68,13 +68,6 @@ Vào lúc tôi viết bài viết này thì bản cập nhật gần đây nhấ
 git clone https://git.suckless.org/dwm
 ----
 
-Nếu không có nhu cầu dùng git về sau, bạn có thể xóa các file và thư mục của git trong folder dwm vừa được clone về bằng lệnh:
-
-[,bash]
-----
-rm -rf ./dwm/{README,LICENSE,.git}
-----
-
 ---
 
 [#patch]
