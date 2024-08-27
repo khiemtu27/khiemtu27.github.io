@@ -9,7 +9,6 @@ slug: tap-am-20
 tone: F
 index: true
 ---
-
 Gần đây hay [.chord]`C` có những nỗi buồn vây quanh
 
 [.chord]`Am7` Ít lúc thấy trời trong xanh

@@ -1,7 +1,7 @@
 :root {
 	cursor: default !important;
-	font-size: 110%;
-	line-height: 1.6rem;
+	font-size: 100%;
+	line-height: 1.8rem;
 	--normal: 1rem;
 	--small: 0.9rem;
 	--tiny: 0.80rem;
@@ -15,7 +15,7 @@
 	--serif: Crimson Pro;
 	--mono: IosevkaTerm;
 	--bright: #efefef;
-	--fg: #dfdfdf;
+	--fg: #cccccc;
 	--fg1: #999;
 	--fg2: #888;
 	--bg: #181818;
@@ -81,6 +81,7 @@
 	.content video, .content img { display: block; margin: .5rem auto; }
 	.left, .right { float: none !important; }
 	:root { font-size: 100%; }
+	article { font-size: 100%; }
 }
 html {
 	font-family: var(--sans);
@@ -89,7 +90,8 @@ html {
 	background: var(--bg);
 	margin: 0;
 }
-body { max-width: 65ch; margin: 0 auto; padding: 0 5% 2rem; }
+body { max-width: 75ch; margin: 0 auto; padding: 0 5% 2rem; }
+article { font-size: 110% ; }
 .paragraph { margin: 1.2rem 0; }
 
 /* ICON */

@@ -8,7 +8,8 @@ image::/images/face.webp[Tôi, align="center", width=200]
 
 == Tôi là ai?
 
-Tên đầy đủ là Từ Vinh Khiêm, sinh ngày 2 tháng 7 năm 2000, từ nhỏ tôi đã thích nghệ thuật, ca hát, vẽ vời, làm thơ, viết truyện.
+Tên đầy đủ là Từ Vinh Khiêm, sinh năm 2000.
+Từ nhỏ tôi đã thích nghệ thuật, ca hát, vẽ vời, làm thơ, viết truyện.
 Nói chung là cứ cái gì để tôi giải bày ra được mấy cái suy nghĩ từ viển vông cho tới tào lao trong đầu là tôi làm.
 
 Sinh ra trong gia đình có ba làm kỹ sư điện, anh trai thì học cao học cơ khí cho tới quản trị kinh doanh.
