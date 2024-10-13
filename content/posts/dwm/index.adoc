@@ -93,7 +93,7 @@ $ mkdir dwm/patches
 $ cd dwm
 
 # tải file diff của patch pertag vào thư mục patches
-$ curl https://dwm.suckless.org/patches/pertag/dwm-6.1-pertag_without_bar.diff -o patches/pertag.diff
+$ curl https://gitlab.com/khiemtu27/dwm/-/raw/master/patches/pertag.diff -o patches/pertag.diff
 ----
 
 Để tiến hành apply patch tự động, ta dùng lệnh patch, lưu ý bạn phải đang ở trong thư mục gốc của dwm nhé:
@@ -128,7 +128,7 @@ image::sticky.gif[Sticky,width=500,align=center]
 ====
 [,bash]
 ----
-$ curl https://dwm.suckless.org/patches/sticky/dwm-sticky-6.4.diff -o patches/sticky.diff
+$ curl https://gitlab.com/khiemtu27/dwm/-/raw/master/patches/sticky.diff -o patches/sticky.diff
 $ patch -i patches/sticky.diff
 ----
 ====
@@ -145,7 +145,7 @@ khi đang float của cửa sổ và khôi phục lại vị trí đó khi bạn
 ====
 [,bash]
 ----
-$ curl https://dwm.suckless.org/patches/save_floats/dwm-savefloats-20181212-b69c870.diff -o patches/save-floats.diff
+$ curl https://gitlab.com/khiemtu27/dwm/-/raw/master/patches/save-floats.diff -o patches/save-floats.diff
 $ patch -i patches/save-floats.diff
 ----
 ====
@@ -161,7 +161,7 @@ Patch này đơn giản sẽ ẩn các tags trống (không chứa cửa sổ n�
 ====
 [,bash]
 ----
-$ curl https://dwm.suckless.org/patches/hide_vacant_tags/dwm-hide_vacant_tags-6.4.diff -o patches/hide-vacant-tags.diff
+$ curl https://gitlab.com/khiemtu27/dwm/-/raw/master/patches/hide-vacant-tags.diff -o patches/hide-vacant-tags.diff
 $ patch -i patches/hide-vacant-tags.diff
 ----
 ====
@@ -177,7 +177,7 @@ $ patch -i patches/hide-vacant-tags.diff
 ====
 [,bash]
 ----
-$ curl https://dwm.suckless.org/patches/removeborder/dwm-removeborder-20220626-d3f93c7.diff -o patches/remove-border.diff
+$ curl https://gitlab.com/khiemtu27/dwm/-/raw/master/patches/remove-border.diff -o patches/remove-border.diff
 $ patch -i patches/remove-border.diff
 ----
 ====
@@ -193,39 +193,9 @@ Cửa sổ floating *khi bật* sẽ luôn nằm ngay giữa màn hình thay vì
 ====
 [,bash]
 ----
-$ curl https://dwm.suckless.org/patches/alwayscenter/dwm-alwayscenter-20200625-f04cac6.diff -o patches/always-center.diff
+$ curl https://gitlab.com/khiemtu27/dwm/-/raw/master/patches/always-center.diff -o patches/always-center.diff
 $ patch -i patches/always-center.diff
-Hunk #1 FAILED at 1057.
-1 out of 1 hunk FAILED -- saving rejects to file dwm.c.rej
 ----
-
-Patch này khi apply sẽ báo lỗi trong file `dwm.c` tại dòng này:
-
-[,c]
-----
-	updatewindowtype(c);
-	updatesizehints(c);
-	updatewmhints(c);
-	c->sfx = c->x;
-	c->sfy = c->y;
-	c->sfw = c->w;
-	c->sfh = c->h;
-----
-
-Đây là đoạn code trong patch `save floats` ở trên. Để khắc phục mâu thuẫn này, gộp cả hai chức năng của hai patches, tôi chọn thay dòng mâu thuẫn như sau:
-
-[,c]
-----
-	updatewindowtype(c);
-	updatesizehints(c);
-	updatewmhints(c);
-	c->sfx = c->x = c->mon->wx + (c->mon->ww - WIDTH(c)) / 2;
-	c->sfy = c->y = c->mon->wy + (c->mon->wh - HEIGHT(c)) / 2;
-	c->sfw = c->w;
-	c->sfh = c->h;
-----
-
-Như thế là ta có thể tận dụng được cả chức năng của `save floats` và `always center` rồi đấy!
 ====
 
 ---
@@ -255,7 +225,7 @@ Mặc định biểu tượng layout (bên phải dãy số các tags trên than
 ====
 [,bash]
 ----
-$ curl https://dwm.suckless.org/patches/monoclesymbol/dwm-monoclesymbol-6.2.diff -o patches/monocle-symbol.diff
+$ curl https://gitlab.com/khiemtu27/dwm/-/raw/master/patches/monocle-symbol.diff -o patches/monocle-symbol.diff
 $ patch -i patches/monocle-symbol.diff
 ----
 ====
