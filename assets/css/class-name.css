@@ -61,7 +61,6 @@
 /* font family */
 .mono { font-family: var(--mono); }
 .sans { font-family: var(--sans); }
-.serif { font-family: var(--serif); font-size: 125%; text-stroke: 2px red; }
 
 /* text transform */
 .lowercase { text-transform: lowercase; }

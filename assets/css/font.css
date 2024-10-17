@@ -1,11 +1,4 @@
 /* FONTS */
-@font-face { font-display: block; font-family: 'Crimson Pro'; font-style: normal; font-weight: 400; src: url('/fonts/crimson-pro.woff2') format('woff2'); }
-@font-face { font-display: block; font-family: 'Crimson Pro'; font-style: italic; font-weight: 400; src: url('/fonts/crimson-pro-i.woff2') format('woff2'); }
-@font-face { font-display: block; font-family: 'Crimson Pro'; font-style: normal; font-weight: 500; src: url('/fonts/crimson-pro-600.woff2') format('woff2'); }
-@font-face { font-display: block; font-family: 'Crimson Pro'; font-style: italic; font-weight: 500; src: url('/fonts/crimson-pro-600i.woff2') format('woff2'); }
-@font-face { font-display: block; font-family: 'Crimson Pro'; font-style: normal; font-weight: 600; src: url('/fonts/crimson-pro-600.woff2') format('woff2'); }
-@font-face { font-display: block; font-family: 'Crimson Pro'; font-style: italic; font-weight: 600; src: url('/fonts/crimson-pro-600i.woff2') format('woff2'); }
-
 @font-face { font-display: block; font-family: 'Cabin'; font-style: normal; font-weight: 400; src: url('/fonts/cabin.woff2') format('woff2'); }
 @font-face { font-display: block; font-family: 'Cabin'; font-style: italic; font-weight: 400; src: url('/fonts/cabin-i.woff2') format('woff2'); }
 @font-face { font-display: block; font-family: 'Cabin'; font-style: normal; font-weight: 500; src: url('/fonts/cabin-600.woff2') format('woff2'); }

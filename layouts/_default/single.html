@@ -14,9 +14,7 @@
 	class="
 	{{/* make text more compact for showing lyrics */}}
 	{{ if isset .Params "tone" }}lyrics{{ end }}
-
-	{{/* use serif font if post is stories */}}
-	{{ if in .Params.tags "stories" }}serif{{ end }}">
+	">
 
 	{{/* content of asciidoc file */}}
 	{{ .Content }}

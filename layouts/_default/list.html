@@ -10,7 +10,7 @@
 {{/* RECENT POSTS */}}
 <section class="mw-1 mx-auto recent">
 	{{ $pages := where .Site.RegularPages ".Params.date" "!=" nil }}
-	{{ $paginator := .Paginate $pages }}
+	{{ $paginator := .Paginate $pages 5 }}
 	{{ range $index, $page := $paginator.Pages }}
 	<a href="{{ .Permalink }}">
 		<div class="recent-entry">
