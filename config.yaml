@@ -1,6 +1,6 @@
 baseURL: "https://khiemtu.xyz"
 languageCode: "vi"
-paginate: 5
+pagination.pagerSize: 5
 DefaultContentLanguage: "vi"
 enableInlineShortcodes: true
 title: "Khiêm Từ"
