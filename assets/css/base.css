@@ -11,8 +11,8 @@
 	--small-radius: 0.25rem;
 	--medium-radius: 0.375rem;
 	--big-radius: 0.5rem;
-	--sans: Cabin;
-	--mono: IosevkaTerm;
+	--sans: -apple-system, system-ui, sans-serif;
+	--mono: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
 	--bright: #efefef;
 	--fg: #cccccc;
 	--fg1: #999;
