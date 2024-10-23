@@ -58,7 +58,7 @@ jobs:
           HUGO_ENVIRONMENT: production
           HUGO_ENV: production
         run: |
-          hugo --minify --baseURL "https://khiemtu27.github.io"
+          hugo --minify
 
       - name: Pagefind
         run: npx pagefind --site ./public --output-path ./public/pagefind
