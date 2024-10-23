@@ -13,6 +13,7 @@
 	--big-radius: 0.5rem;
 	--sans: -apple-system, system-ui, sans-serif;
 	--mono: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+	--serif: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif;
 	--bright: #efefef;
 	--fg: #cccccc;
 	--fg1: #999;
@@ -46,7 +47,7 @@
 		--bright: #404040;
 		--fg: #555;
 		--fg1: #666;
-		--fg2: #707070;
+		--fg2: #808080;
 		--bg: #fff;
 		--bg1: #f9f9f9;
 		--bg2: #f4f4f4;

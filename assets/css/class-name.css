@@ -61,6 +61,10 @@
 /* font family */
 .mono { font-family: var(--mono); }
 .sans { font-family: var(--sans); }
+.serif { font-family: var(--serif); }
+
+/* font style */
+.italic { font-style: italic; }
 
 /* text transform */
 .lowercase { text-transform: lowercase; }
