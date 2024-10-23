@@ -1,4 +1,4 @@
-baseURL: "https://khiemtu.xyz"
+baseURL: "/"
 languageCode: "vi"
 pagination.pagerSize: 5
 DefaultContentLanguage: "vi"
