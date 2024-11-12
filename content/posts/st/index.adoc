@@ -293,7 +293,7 @@ Tôi đã đính kèm sẵn các bảng màu sau:
 
 Nếu bạn chưa biết cách cài đặt st lên máy hãy tham khảo qua link:/suckless/#install[bài viết này] nhé!
 
-Mã nguồn của bản st này tôi sẽ công khai ở link:https://gitlab.com/khiemtu27/st[repo GitLab của tôi].  Dưới đây sẽ là ảnh chụp màn hình của tất cả các bảng màu đi kèm để bạn có thể tham khảo.
+Dưới đây sẽ là ảnh chụp màn hình của tất cả các bảng màu đi kèm để bạn có thể tham khảo.
 
 .Catppuccin (mocha)
 image::mocha.png[Mocha,width=600,align=center]

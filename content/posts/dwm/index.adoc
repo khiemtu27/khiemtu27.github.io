@@ -326,5 +326,3 @@ Mẫu các bảng màu bạn có thể xem link:/st/#showcase[tại đây.]
 video::showcase.mp4[showcase,width=600,align=center,opts="autoplay,loop,nocontrols,muted"]
 
 Thế là sau khi cài đặt các patches, chúng ta đã có một dwm "đầy đủ" chức năng rồi. Phần còn lại chỉ là tùy chỉnh file config.h, thêm các phím tắt, thay đổi màu sắc, font... sau đó xóa file config.h và cài đặt dwm lên máy của mình là xong. Các bước cài đặt bạn có thể tìm hiểu link:/suckless/#install[tại đây]
-
-Bản hoàn thiện sau khi cài đặt tất cả các patches, đồng thời các thay đổi nhỏ chưa được cập nhật trong bài viết tôi sẽ để https://gitlab.com/khiemtu27/dwm[ở đây].
