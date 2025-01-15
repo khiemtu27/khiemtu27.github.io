@@ -1,0 +1,4 @@
+{{- $keys := split (.Get 0) " " -}}
+{{- range $index, $key := $keys -}}
+<kbd>{{ $key }}</kbd>{{ if lt (add $index 1) (len $keys) }}+{{ end }}
+{{- end -}}
