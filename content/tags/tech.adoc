@@ -1,6 +1,0 @@
----
-title: "Phần mềm"
-description: "chia sẻ về các món công nghệ"
-slug: tech
-layout: tag
----

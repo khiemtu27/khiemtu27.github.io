@@ -1,6 +1,0 @@
----
-title: "Tạp âm"
-description: "vài bài nhạc tôi viết vu vơ"
-slug: tap-am
-layout: tag
----

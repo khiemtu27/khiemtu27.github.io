@@ -1,6 +1,0 @@
----
-title: "Truyện"
-description: "những câu chuyện chưa đủ hay để in ra sách"
-slug: stories
-layout: tag
----

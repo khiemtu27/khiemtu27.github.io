@@ -1,6 +1,0 @@
----
-title: "Thơ"
-description: "mới đôi mươi mà tập tành làm thơ đồ đó"
-slug: poetry
-layout: tag
----

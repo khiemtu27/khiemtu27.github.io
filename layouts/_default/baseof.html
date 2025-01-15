@@ -4,23 +4,11 @@
 		{{ partial "head/metadata.html" . }}
 		{{ partial "head/favicon.html" . }}
 		{{ partial "head/css.html" . }}
-		{{ partial "head/scripts.html" . }}
 		{{ partial "head/twitter.html" . }}
 	</head>
 
 	<body>
-		{{ partial "header.html" . }}
 		{{ partial "top.html" . }}
-
 		{{ block "main" . }}{{ end }}
-
-		{{ if ne .Params.slug "search" }}
-		<div class="select-none">
-			<hr>
-			<h2 class="thin">Tìm kiếm</h2>
-			<div class="mt-2" id="search"></div>
-		</div>
-		{{ end }}
-
 	</body>
 </html>

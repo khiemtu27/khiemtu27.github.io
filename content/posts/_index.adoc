@@ -1,5 +1,0 @@
----
-title: "Bài viết"
-description: "tất cả bài viết theo thứ tự cũ dần"
-slug: posts
----

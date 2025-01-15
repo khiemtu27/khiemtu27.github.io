@@ -1,26 +1,29 @@
 {{ define "main" }}
 
-{{/* LYRICS TOOLBAR */}}
-{{ if isset .Params "tone" }}{{ partial "lyrics-toolbar.html" . }}{{ end }}
+<div class="bold select-none text-right small">
+	{{ if .Params.date }}
+	<p class="thin">{{ .Date | dateFormat (.Site.Params.dateformat | default "Ngày 2 tháng 1 năm 2006") }}</p>
+	{{ end }}
 
-{{/* TABLE OF CONTENTS */}}
-{{ if gt (len .TableOfContents) 0 }}{{ partial "toc.html" . }}{{ end }}
+	{{ if .Params.tags }}
+		{{ range $index, $tag := .Params.tags }}
+		<a class="thin fade" href="/{{ $tag }}">#{{ $tag }} </a>
+		{{ end }}
+	{{ end }}
+</div>
 
-{{/* MAIN CONTENT */}}
-<article
-	{{/* turn on indexing if date is set */}}
-	{{ if isset .Params "date" }}data-pagefind-body{{ end }}
 
-	class="
-	{{/* make text more compact for showing lyrics */}}
-	{{ if isset .Params "tone" }}lyrics{{ end }}
-	">
+{{ if gt (len .TableOfContents) 200 }}{{ partial "toc.html" . }}{{ end }}
+<article class="{{ if isset .Params "tone" }}lyrics{{ end }}">
 
-	{{/* content of asciidoc file */}}
+	{{ if .Params.tone }}{{ partial "chord.html" . }}{{ end }}
 	{{ .Content }}
+
+
 </article>
 
-{{/* POST INFO - only for posts that have ".Params.date" set */}}
-{{ if isset .Params "date" }}{{ partial "post-info.html" . }}{{ end }}
+<section>
+	{{ partial "related.html" . }}
+</section>
 
 {{ end }}

@@ -1,14 +1,13 @@
 {{ define "main" }}
-<section class="mw-1 mx-auto select-none">
-	{{/* get tag name using file name "/content/tags/<TAG-NAME>.adoc" */}}
+{{ .Content }}
+<ul class="select-none">
 	{{ $tag := .File.BaseFileName }}
-
-	{{/* find any post that has "$tag" in its ".Params.tags" */}}
-	{{ range where .Site.RegularPages "Params.tags" "intersect" (slice $tag) }}
-
-	{{/* showing those posts using small list layout */}}
-	{{ partial "small-list.html" . }}
-
+	{{ range sort .Site.RegularPages "Title" }}
+	{{ if intersect .Params.tags (slice $tag) }}
+	<li>
+		<a href="{{ .RelPermalink }}" class="bold bright">{{ .Title }}</a>
+	</li>
 	{{ end }}
-</section>
+	{{ end }}
+</ul>
 {{ end }}

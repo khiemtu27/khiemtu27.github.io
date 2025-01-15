@@ -1,10 +1,10 @@
-baseURL: "/"
+baseURL: "https://khiemtu.xyz"
 languageCode: "vi"
-pagination.pagerSize: 5
 DefaultContentLanguage: "vi"
 enableInlineShortcodes: true
-title: "Khiêm Từ"
+title: "Nhà của Khiêm"
 disableKinds: ["taxonomy", "term"]
+ignoreLogs: ["warning-goldmark-raw-html"]
 outputs:
   home:
     - html
@@ -20,28 +20,14 @@ permalinks:
   posts: "/:slug/"
   tags: "/:slug/"
 markup:
-  defaultMarkdownHandler: "asciidocext"
-  asciidocExt:
-    attributes:
-      - source-highlighter: rouge
-      - experimental: true
-      - figure-caption!: true
-      - note-caption: "Ghi chú"
-      - caution-caption: "Lưu ý"
-      - warning-caption: "Cảnh báo"
-    backend: html5
-    extensions:
-    preserveTOC: false
-    safeMode: unsafe
-    trace: false
-    verbose: false
-    workingFolderCurrent: false
-  highlight:
-    noClasses: false
-    tabWidth: 4
-  tableOfContents:
-    startLevel: 2
-    endLevel: 3
-security:
-  exec:
-    allow: ["asciidoctor"]
+  defaultMarkdownHandler: "goldmark"
+  goldmark:
+    renderer:
+      unsafe: true
+related:
+  includeNewer: true
+  threshold: 20
+  toLower: false
+  indices:
+    name: "tags"
+    weight: 80

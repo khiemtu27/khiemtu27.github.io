@@ -1,6 +1,0 @@
----
-title: "Ý nghĩ"
-description: "viết ra cho đầu óc đỡ lộn xộn"
-slug: thoughts
-layout: tag
----

@@ -1,6 +1,0 @@
----
-title: "Sách"
-description: "về việc đọc và những quyển sách"
-slug: books
-layout: tag
----
