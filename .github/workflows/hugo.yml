@@ -49,9 +49,6 @@ jobs:
       - name: Install Node.js dependencies
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
 
-      - name: Install dependencies
-        run: sudo apt update && sudo apt install -y hugo ruby asciidoctor nodejs npm ruby-rouge ruby-asciidoctor
-
       - name: Build with Hugo
         env:
           # For maximum backward compatibility with Hugo modules
@@ -59,9 +56,6 @@ jobs:
           HUGO_ENV: production
         run: |
           hugo --minify
-
-      - name: Pagefind
-        run: npx pagefind --site ./public --output-path ./public/pagefind
 
       # - name: js-beautify
       #   run: |
